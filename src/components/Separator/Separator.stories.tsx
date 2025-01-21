@@ -2,25 +2,33 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import Separator from './Separator';
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
   title: 'Example/Separator',
   component: Separator,
-  parameters: {
-    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
-    layout: 'centered',
-  },
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
-  // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
+    size: {
+      control: {
+        type: 'select',
+        options: ['xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl'],
+      },
+      description: 'The size of the separator (affects the margin)',
+    },
   },
+  decorators: [
+    (Story, context) => (
+      <div className='text-center w-48'>
+        <p className='block bg-slate-800 p-2 rounded'>Above the separator</p>
+        <Story {...context} />
+        <p className='block bg-slate-800 p-2 rounded'>Below the separator</p>
+      </div>
+    ),
+  ],
 } satisfies Meta<typeof Separator>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const ExtraExtraSmall: Story = {
   args: {
     size: 'xxs'
