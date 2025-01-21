@@ -1,11 +1,6 @@
-interface SeparatorProps {
-    size?: string;
-}
-
-export default function Separator({
-    size = 'xxs',
-}: SeparatorProps) {
-    let marginSize
+export default function Separator(_a) {
+    var _b = _a.size, size = _b === void 0 ? 'xxs' : _b;
+    var marginSize;
     switch (size) {
         case 'xxs':
             marginSize = 'my-4';
@@ -29,7 +24,6 @@ export default function Separator({
             marginSize = 'my-96';
             break;
     }
-    return (
-        <div className={marginSize} />
-    )
+    return <div className={marginSize}/>;
 }
+//# sourceMappingURL=Separator.jsx.map
