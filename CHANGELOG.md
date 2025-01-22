@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/), and this
 
 ## [1.0.2] - 2025-01-21
 ### Fixed
-- Change package.json to point to dist/src/index.d.ts for declarations
+- Change types in package.json to point to dist/src/index.d.ts for declarations
 
 ## [1.0.1] - 2025-01-21
 ### Fixed
