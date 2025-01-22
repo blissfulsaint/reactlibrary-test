@@ -1,6 +1,6 @@
 {
   "name": "@blissfulsaint/reactlibrary-test",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -22,10 +22,15 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
-    "next": "14.2.23",
-    "react": "^18",
-    "react-dom": "^18"
+  "peerDependencies": {
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.4",
