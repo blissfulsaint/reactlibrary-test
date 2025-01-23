@@ -36,6 +36,13 @@ function LayoutBand(_a) {
     return (jsxRuntime.jsx("div", { className: "max-w-screen-lg mx-auto px-3", children: children }));
 }
 
+function tailwindContent() {
+    // Returns an array of strings required in consuming app's tailwind.config.ts content
+    // in order for tailwind styles to work
+    return ["./node_modules/@blissfulsaint/reactlibrary-test/dist/**/*.{js,jsx,ts,tsx}"];
+}
+
 exports.LayoutBand = LayoutBand;
 exports.Separator = Separator;
+exports.tailwindContent = tailwindContent;
 //# sourceMappingURL=index.js.map
