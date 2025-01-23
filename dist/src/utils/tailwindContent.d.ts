@@ -1,1 +1,2 @@
-export declare function tailwindContent(): string[];
+declare function tailwindContent(): string[];
+export { tailwindContent };
