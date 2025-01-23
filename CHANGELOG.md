@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/), and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [1.1.2] - 2025-01-23
+
+### Fixed
+
+- Updated package.json with a script that will manually bundle css to avoid tailwind build issues
+
 ## [1.1.1] - 2025-01-23
 
 ### Fixed
